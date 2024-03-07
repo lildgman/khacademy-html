@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역관련태그</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+
+        span {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            /*
+                인라인 요소에는 대부분 가로, 세로길이 지정 불가
+
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>asdsaasdasd</h1>ㅁㄴㅇㅁㄴㅇㅁㄴ
+    <br>
+    <b>asdasd</b>dfdfdfdfdfdqeqweq
+    <!--
+        블럭요소: 한 줄 단위로 영역을 차지함
+                 줄바꿈이 적용되어 이미 존재하는 태그의 다음줄에 다음영역이 잡힘
+                 (p, pre, div)
+        인라인요소: content(내용) 영역에 해당하는 부분만 영역을 차지하는 요소
+                   줄바꿈이 적용되지 않아 다음 영역이 바로 옆으로 잡힘
+                   (b, mark, s, img, span)
+    -->
+    <h1>영역관련태그</h1>
+    <h2>div태그와 span태그의 차이점 1: 줄바꿈적용</h2>
+    <h3>div태그</h3>
+    <p>div태그는 블럭요소로 한 줄 단위로 영역을 차지한다.(이미 존재하는 태그 다음줄에 영역이 잡힘)</p>
+
+    <div style="background: red;">첫번째 영역</div>
+    <div style="background: orange;">두번째 영역</div>
+    <div style="background: green;">세번째 영역</div>
+
+    <h3>span태그</h3>
+    <p>
+        span태그는 인라인 요소로 content 영역만 차지(줄바꿈 발생하지 않고)
+    </p>
+    <span style="background: blue;">첫번째 영역</span>
+    <span style="background: yellow;">두번째 영역</span>
+    <span style="background: purple;">세번째 영역</span>
+
+    <h2>div태그와 span태그의 차이점2: 영역지정방식</h2>
+    <h3>div태그: 사각형 박스로 영역을 지정</h3>
+    <div>
+        인간 뇌를 모사해 고도의 인공지능 서비스를 초저전력·초고속으로 처리해내는 AI 반도체가 개발됐습니다.
+
+        유회준 KAIST 교수팀은 입력값이 클 때는 전력을 많이 소모하고 입력값이 작으면 전력을 적게 소모하는 '스파이킹 뉴럴 네트워크' 기술과 연산 정확도가 높은 '심층 인공 신경망'이 서로 상보적으로
+        작동하도록 하는 '상보형 트랜스포머'를 개발했다고 밝혔습니다.
+
+        
+    </div>
+    <br><br>
+    <h3>span 태그: 문장단위로 영역을 지정</h3>
+    <span>
+        인간 뇌를 모사해 고도의 인공지능 서비스를 초저전력·
+        초고속으로 처리해내는 AI 반도체가 개발됐습니다.
+        유회준 KAIST 교수팀은 입력값이 클 때는 전력을 많이 
+        소모하고 입력값이 작으면 전력을 적게 소모하는 '
+        스파이킹 뉴럴 네트워크' 기술과 연산 정확도가 높은 '
+        심층 인공 신경망'이 서로 상보적으로
+        작동하도록 하는 '상보형 트랜스포머'를 개발했다고 
+        밝혔습니다.
+    </span>
+
+    <hr>
+
+    <h1>iframe</h1>
+    <p>웹 문서 안에 다른 웹페이지를 추가하는 태그(인라인요소)</p>
+    <iframe src="04_이미지및멀티미디어.html" width="600" height="800"></iframe>
+    <iframe width="932" height="524" src="https://www.youtube.com/embed/ftpSeAu4xSU" title="[23/24 UCL] 레알 마드리드 vs 라이프치히 비니시우스 주요장면" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+
+</html>
